@@ -1,0 +1,18 @@
+.data-analysis {
+    background: url('../images/wave.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .row {
+        margin-bottom: 35px;
+
+        &:last-child {
+            margin-bottom: 0;
+
+            @include media-query(sm) {
+                display: inline-flex;
+                flex-direction: row-reverse;
+            }
+        }
+    }
+}

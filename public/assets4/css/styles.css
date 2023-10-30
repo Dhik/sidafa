@@ -1,0 +1,132 @@
+section {
+    position: relative;
+}
+.posts {
+    margin: 20px 0;
+}
+.post__identity {
+    display: flex;
+    align-content: space-between;
+}
+
+.post__user {
+    margin-right: 5px;
+}
+.post__item img, .post__item .post__meta {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.post__item .post__meta {
+    width: 87%;
+}
+
+.post__item img {
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.post__item {
+    padding: 20px 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+.post__content {
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+span.post__date {
+    font-size: 12px;
+}
+
+.post__data {
+    display: flex;
+}
+
+.post__data span {
+    margin-right: 25px;
+    font-size: 14px;
+}
+.not-available {
+    background-color: #d1d1d1!important;
+    cursor: not-allowed!important;
+}
+.keyword__name {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-family: 'Open sans';
+    font-weight: 800;
+}
+.semantic .section__title {
+    font-size: 19px;
+    margin-top: 0;
+}
+.graph--padding-none .post__item {
+    padding: 15px 20px;
+}
+
+.graph--padding-none .post__item:hover {
+    background: white;
+}
+.post__item:last-child {
+    border-bottom: none;
+}
+
+.pengetahuan--single .pengetahuan__item {
+    color: white;
+    line-height: 1.8;
+    border-radius: 0;
+    padding: 0;
+}
+
+.pengetahuan__img {
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pengetahuan__title {
+    color: #ddb06f;
+    margin-bottom: 20px;
+}
+.pengetahuan__desc {
+    padding: 20px 30px;
+}
+
+.special-link {
+    padding: 5px 10px;
+    display: inline-block;
+    background: #403380;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.special-link:hover {
+    background: #604cc2;
+    color: white;
+}
+h5.card-title {
+    font-size: 20px;
+}
+.spasial-bg .hero__image {
+    height: 100%;
+    background-size: cover!important;
+    position: relative;
+}
+.spasial-bg__buttons {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    z-index: 2;
+}
+
+.spasial-bg__buttons .button {
+    padding: 10px 20px;
+    font-size: 13px;
+    margin-right: 20px;
+}

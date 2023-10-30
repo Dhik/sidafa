@@ -1,0 +1,131 @@
+.nav {
+    font-family: 'nevis';
+    display: inline-flex;
+    justify-content: space-between;
+
+    @include media-query(md) {
+        justify-content: center;
+    }
+
+    &__item {
+        display: inline-block;
+
+        &-link {
+            padding: 10px 16px;
+            display: block;
+            position: relative;
+
+            &.button {
+                padding: 10px 30px;
+            }
+
+            &:hover {
+                color: $black-color;
+            }
+
+            &.active {
+                border-bottom: 4px solid #ddb06f;
+            }
+        }
+    }
+
+    &--left {
+        .nav__item {
+            &-link {
+                &::after {
+                    position: absolute;
+                	top: 100%;
+                	left: 0;
+                	width: 100%;
+                	height: 1px;
+                	background: $secondary-color;
+                	content: '';
+                	opacity: 0;
+                	-webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+                	-moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+                	transition: height 0.3s, opacity 0.3s, transform 0.3s;
+                	-webkit-transform: translateY(-10px);
+                	-moz-transform: translateY(-10px);
+                	transform: translateY(-10px);
+                }
+
+                &:hover::after,
+                &:focus::after {
+                    height: 4px;
+                	opacity: 1;
+                	-webkit-transform: translateY(0px);
+                	-moz-transform: translateY(0px);
+                	transform: translateY(0px);
+                }
+            }
+        }
+
+        @include media-query(md) {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+/* Dashboard menu */
+.vertical-menu {
+    width: 240px;
+    position: fixed;
+    height: 100%;
+    background: $primary-color;
+
+    .header__logo {
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+        background: #3c3078;
+
+        a {
+            color: $secondary-color;
+        }
+    }
+
+    &__nav {
+        padding: 0 10px;
+
+        a {
+            color: white;
+            font-family: 'PT Sans';
+        }
+
+        ul:first-child {
+            padding-bottom: 15px;
+            border-bottom: 1px solid #483a8d;
+        }
+        ul:last-child {
+            padding-top: 15px;
+            border-top: 1px solid #322084;
+        }
+    }
+
+    &__nav--item {
+        a {
+            padding: 15px 25px;
+            display: block;
+
+            &.active,
+            &:hover {
+                background: $secondary-color;;
+                color: black;
+                border-radius: 7px;
+            }
+        }
+
+        i {
+            margin-right: 10px;
+            display: inline-block;
+            vertical-align: middle;
+            width: 15px;
+        }
+
+        span {
+            display: inline-block;
+            vertical-align: middle;
+             width: 145px;
+        }
+    }
+}

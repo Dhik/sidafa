@@ -1,0 +1,57 @@
+.hero {
+    padding: 35px 0;
+
+    @include media-query(sm) {
+        padding: 20px 0;
+    }
+
+    &__title {
+        margin-top: 30px;
+        margin-bottom: 35px;
+
+        @include media-query(lg) {
+            margin-top: 0;
+        }
+
+        h1 {
+            padding-bottom: 15px;
+
+            @include media-query(lg) {
+                font-size: 30px;
+            }
+        }
+
+        &:after {
+            content: "";
+            height: 5px;
+            position: absolute;
+            width: 25px;
+            background: $primary-color;
+        }
+    }
+
+    &__desc {
+        line-height: 1.7;
+        margin-bottom: 20px;
+
+        p {
+            @include media-query(lg) {
+                font-size: 13px;
+            }
+        }
+    }
+
+    &__button {
+        a {
+            padding: 10px 30px;
+            display: block;
+            width: fit-content;
+        }
+    }
+
+    &__image {
+        @include media-query(sm) {
+            margin-top: 25px
+        }
+    }
+}

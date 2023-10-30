@@ -1,0 +1,49 @@
+.header {
+    padding: 30px 0 20px;
+    position: relative;
+
+    .container {
+        @include media-query(sm) {
+            display: inline-flex;
+            justify-content: center;
+        }
+    }
+
+    &__logo {
+        width: 20%;
+        display: inline-block;
+        vertical-align: middle;
+        font-family: $bold-font;
+        font-size: 33px;
+        position: relative;
+
+        &-icon {
+            color: $black-color;
+        }
+
+        @include media-query(lg) {
+            width: 100%;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        @include media-query(sm) {
+            width: 45%;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__nav {
+        width: 75%;
+        display: inline-block;
+        vertical-align: middle;
+
+        @include media-query(lg) {
+            width: 100%;
+        }
+
+        @include media-query(sm) {
+            width: auto;
+        }
+    }
+}

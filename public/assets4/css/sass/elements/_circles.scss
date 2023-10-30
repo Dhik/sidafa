@@ -1,0 +1,29 @@
+.circle {
+}
+.circle-blue {
+    position: absolute;
+    width: 800px;
+    height: 500px;
+    background: $primary-color;
+    border-radius: 50%;
+    right: -333px;
+    top: -349px;
+
+    @include media-query(xl) {
+        display: none;
+    }
+}
+
+.circle-softgrey {
+    position: absolute;
+    width: 980px;
+    height: 900px;
+    background: #e9e9e9;
+    border-radius: 50%;
+    left: -27%;
+    top: -1%;
+
+    @include media-query(md) {
+        display: none;
+    }
+}

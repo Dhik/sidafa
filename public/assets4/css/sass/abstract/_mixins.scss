@@ -1,0 +1,66 @@
+// Media Queries
+@mixin media-query($width, $type: max) {
+  @if map-has-key($grid-breakpoints, $width) {
+    $width: map-get($grid-breakpoints, $width);
+  }
+  @if $type == max {
+    $width: $width - 0.02px;
+  }
+  @media only screen and (#{$type}-width: $width) {
+    @content;
+  }
+}
+@mixin media-query-height($height, $type: max) {
+  @if map-has-key($grid-breakpoints, $height) {
+    $height: map-get($grid-breakpoints, $height);
+  }
+  @if $type == max {
+    $height: $height - 0.02px;
+  }
+  @media only screen and (#{$type}-height: $height) {
+    @content;
+  }
+}
+@mixin media-query-width-height($width, $height, $wtype: max, $htype: max) {
+  @if map-has-key($grid-breakpoints, $width) {
+    $width: map-get($grid-breakpoints, $width);
+  }
+  @if map-has-key($grid-breakpoints, $height) {
+    $height: map-get($grid-breakpoints, $height);
+  }
+  @if $wtype == max {
+    $width: $width - 0.02px;
+  }
+  @if $htype == max {
+    $height: $height - 0.02px;
+  }
+  @media only screen and (#{$wtype}-width: $width) and (#{$htype}-height: $height) {
+    @content;
+  }
+}
+//line-clamp
+@mixin line-clamp($numOfLines: 3, $lineHeight: 22px) {
+  display: -webkit-box;
+  -webkit-line-clamp: $numOfLines;
+  -webkit-box-orient: vertical;
+  overflow-y: hidden;
+  max-height: $numOfLines * $lineHeight;
+}
+//placeholder
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder {
+    @content;
+  }
+
+  &::-moz-placeholder {
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
+}

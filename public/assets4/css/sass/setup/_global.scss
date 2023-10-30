@@ -1,0 +1,54 @@
+body,
+html {
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: white;
+    font-family: $font-family-base;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.clearfix {
+
+    &::after {
+        display: table;
+        clear: both;
+        content: "";
+    }
+}
+
+a[href],
+button {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a {
+    color: $blue-color;
+}
+a:hover {
+    opacity: 0.85;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+h1 {
+    font-size: $h1-font-size;
+}
+.wrapper {
+    width: 1200px;
+    margin: auto;
+}

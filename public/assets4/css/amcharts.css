@@ -1,0 +1,8 @@
+#pie-chart-sentiment,
+#time-series-sentiment {
+    width: 100%;
+    height: 500px;
+}
+#wordcloud {
+    height: 394px;
+}

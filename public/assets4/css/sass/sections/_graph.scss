@@ -1,0 +1,48 @@
+.graph {
+    background: #f1f1f1;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+
+    &--padding-eq {
+        padding: 20px;
+    }
+
+    &--padding-none {
+        padding: 0px;
+    }
+
+    .section__title,
+    .section__description {
+        text-align: left;
+    }
+
+    .section {
+        &__title {
+            margin-top: 20px;
+            text-transform: capitalize;
+            font-size: 25px;
+
+            &:after {
+                left: 0;
+                transform: initial;
+            }
+        }
+
+        &__description {
+            margin-bottom: 0;
+            font-size: 13px;
+        }
+    }
+
+    .nav {
+        display: inline-flex;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .nav-item .nav-link.active {
+        background: #403380;
+        color: #ddb06f;
+    }
+}

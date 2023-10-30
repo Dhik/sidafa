@@ -1,0 +1,42 @@
+.pengetahuan {
+    &__item {
+        padding: 15px 20px;
+        background: #403380;
+        margin-bottom: 25px;
+        border-radius: 8px;
+        font-family: 'PT Sans';
+    }
+
+    &__num, &__text {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &__num {
+        padding: 10px 15px;
+        font-weight: bold;
+        font-size: 18px;
+        color: white;
+        background: #ddb06f;
+        border-radius: 7px;
+    }
+
+    &__text {
+        width: 79%;
+        margin-left: 10px;
+
+        span {
+            color: white;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        a {
+            color: #ddb06f;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: bold;
+            display: inline-block;
+        }
+    }
+}

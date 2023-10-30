@@ -1,0 +1,11 @@
+.button {
+    text-transform: uppercase;
+    border-radius: 7px;
+    font-family: $bold-font;
+
+    &.block {
+        color: $light-color;
+        background-color: $secondary-color;
+        transition: all 0.3s ease;
+    }
+}

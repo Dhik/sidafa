@@ -1,0 +1,36 @@
+.mobile-menu-trigger {
+    display: none;
+    font-size: 31px;
+
+    .fa.fa-times {
+        width: 26.58px;
+    }
+
+    @include media-query(sm) {
+        display: block;
+    }
+}
+.nav {
+    @include media-query(sm) {
+        display: none!important;
+    }
+
+    &--mobile {
+        display:none;
+        text-align: center;
+        background: $primary-color;
+        font-family: 'nevis';
+
+        .nav__item {
+            width: 100%;
+
+            &-link {
+                color: white;
+            }
+
+            &:last-child {
+                background-color: $secondary-color;
+            }
+        }
+    }
+}

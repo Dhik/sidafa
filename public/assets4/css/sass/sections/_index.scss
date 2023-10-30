@@ -1,0 +1,80 @@
+@import "article";
+@import "data-analysis";
+@import "graph";
+@import "header";
+@import "hero";
+@import "kerjasama";
+@import "nav";
+@import "menu-mobile";
+@import "program-rumah";
+@import "pengetahuan";
+@import "sumber-data";
+@import "video";
+@import "footer";
+
+section {
+    padding: 50px 0;
+}
+.section {
+    &__title {
+        font-size: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: 30px;
+        position: relative;
+
+        &:after {
+            content: "";
+            height: 4px;
+            width: 24px;
+            position: absolute;
+            background: #403582;
+            bottom: 15px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 25px;
+        padding-bottom: 5px;
+
+        h3 {
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        &:after {
+            content: "";
+            height: 5px;
+            position: absolute;
+            width: 25px;
+            background: #ddb06f;
+        }
+    }
+
+    &__list {
+        .list__item {
+            display: inline-flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 20px;
+
+            p {
+                margin-left: 20px;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__description {
+        text-align: center;
+        margin: auto;
+        line-height: 1.8;
+        margin-bottom: 40px;
+
+        &--align-left {
+            text-align: left;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+html {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: $blue-color;
+}
+
+.site {
+    background-color: $semi-white-color;
+}
+
+.container .container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.search .hentry,
+.archive .hentry {
+    margin-bottom: 30px;
+}

@@ -1,0 +1,27 @@
+.page-pagination {
+
+    .page-numbers {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        list-style: none;
+
+        li a,
+        li span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 46px;
+            height: 46px;
+            margin: 5px;
+            font-weight: 700;
+            border: 1px solid $primary-color;
+            border-radius: 50%;
+        }
+
+        li a {
+            color: $light-color;
+            background: $primary-color;
+        }
+    }
+}

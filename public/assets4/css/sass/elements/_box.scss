@@ -1,0 +1,46 @@
+.icon-red {color: #ff7676;}
+.icon-green {color: #53e69d;}
+.icon-blue {color: #2cabe3;}
+
+.box {
+    padding: 15px;
+    background: #f1f1f1;
+    border-radius: 8px;
+
+    &__title {
+        font-size: 17px;
+    }
+
+    &__metadata {
+        margin: 20px 0;
+        font-size: 12px;
+        line-height: 1.8;
+
+        span {
+            width: 100%;
+            display: inline-block;
+        }
+    }
+
+    &__graph-title {
+        font-size: 13px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__graph-legend {
+        display: flex;
+        justify-content: space-around;
+        margin: 15px 0;
+        font-size: 12px;
+    }
+
+    &__button {
+        padding: 10px 15px;
+        margin: 0 auto;
+        text-align: center;
+        width: 150px;
+        display: block;
+        font-size: 12px;
+    }
+}

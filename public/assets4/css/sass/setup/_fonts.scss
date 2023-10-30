@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'nevis';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/nevis.woff") format("woff"),
+}
+
+@font-face{
+	font-family: 'Computer Modern';
+	src: url('../fonts/cmunci-webfont.eot');
+	src: url('../fonts/cmunci-webfont.eot?iefix') format('eot'),
+	     url('../fonts/cmunci-webfont.woff') format('woff'),
+	     url('../fonts/cmunci-webfont.ttf') format('truetype'),
+	     url('../fonts/cmunci-webfont.svg#webfont') format('svg');
+}
